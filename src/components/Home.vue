@@ -1,13 +1,20 @@
 <template>
   <div>
-    <h1>Home</h1>
-    <h2>This is Home</h2>
+      <h1>Home</h1>
+      <h2>This is Home</h2>
+      <p>{{id}}</p>
+      <p>{{age}}</p>
   </div>
+
 </template>
 
 <script>
 export default {
   name: 'Home',
+  props:[
+    'id',
+    'age'
+  ]
 }
 </script>
 
